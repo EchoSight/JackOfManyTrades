@@ -314,12 +314,14 @@ h2 { margin: 0 0 .8rem; font-size: clamp(1.6rem, 3vw, 2.4rem); }
 }
 
 .service-card {
-  display: block;
+  display: flex;
+  align-items: flex-start;
+  gap: .85rem;
   background: hsl(var(--card));
   color: hsl(var(--card-foreground));
   border: 1px solid hsl(var(--border));
   border-radius: calc(var(--radius) + 4px);
-  padding: 1.5rem;
+  padding: 1.3rem;
   text-decoration: none;
   transition: border-color .3s ease, box-shadow .3s ease, transform .3s ease;
 }
@@ -348,6 +350,11 @@ h2 { margin: 0 0 .8rem; font-size: clamp(1.6rem, 3vw, 2.4rem); }
 .service-card p {
   margin: 0;
   color: hsl(var(--muted-foreground));
+}
+
+.service-copy {
+  display: grid;
+  gap: .35rem;
 }
 
 .service-link {
@@ -1271,9 +1278,23 @@ code, pre, .mono {
 }
 
 .service-emoji {
-  margin: 0 0 .65rem;
-  font-size: 1.6rem;
+  margin: .15rem 0 0;
+  font-size: 1.45rem;
   line-height: 1;
+  flex-shrink: 0;
+}
+
+
+@media (max-width: 560px) {
+  .service-card {
+    padding: 1.15rem;
+    gap: .7rem;
+  }
+
+  .service-emoji {
+    font-size: 1.3rem;
+    margin-top: .1rem;
+  }
 }
 
 .choose-list,
