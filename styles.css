@@ -1,25 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
 
 :root {
-  --background: 40 20% 97%;
-  --foreground: 220 20% 12%;
+  --background: 210 45% 99%;
+  --foreground: 215 38% 20%;
   --card: 0 0% 100%;
   --card-foreground: 220 20% 12%;
   --popover: 0 0% 100%;
   --popover-foreground: 220 20% 12%;
-  --primary: 24 85% 52%;
+  --primary: 213 68% 46%;
   --primary-foreground: 0 0% 100%;
-  --secondary: 220 15% 92%;
-  --secondary-foreground: 220 20% 12%;
-  --muted: 220 10% 94%;
-  --muted-foreground: 220 10% 42%;
-  --accent: 220 25% 16%;
-  --accent-foreground: 40 20% 97%;
+  --secondary: 212 55% 97%;
+  --secondary-foreground: 215 35% 16%;
+  --muted: 212 50% 97%;
+  --muted-foreground: 216 16% 38%;
+  --accent: 214 44% 24%;
+  --accent-foreground: 210 25% 98%;
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
-  --border: 220 12% 88%;
-  --input: 220 12% 88%;
-  --ring: 24 85% 52%;
+  --border: 213 35% 90%;
+  --input: 213 35% 90%;
+  --ring: 214 72% 42%;
   --radius: .5rem;
   --sidebar-background: 0 0% 98%;
   --sidebar-foreground: 240 5.3% 26.1%;
@@ -28,36 +28,36 @@
   --sidebar-accent: 240 4.8% 95.9%;
   --sidebar-accent-foreground: 240 5.9% 10%;
   --sidebar-border: 220 13% 91%;
-  --sidebar-ring: 24 85% 52%;
-  --hero-bg: 220 25% 12%;
-  --hero-foreground: 40 20% 97%;
-  --surface-warm: 35 30% 95%;
-  --surface-cool: 215 20% 96%;
-  --badge-bg: 24 85% 52%;
+  --sidebar-ring: 214 72% 42%;
+  --hero-bg: 214 48% 20%;
+  --hero-foreground: 210 25% 98%;
+  --surface-warm: 210 55% 97%;
+  --surface-cool: 210 58% 98%;
+  --badge-bg: 214 72% 42%;
   --badge-foreground: 0 0% 100%;
-  --section-alt: 220 15% 96%;
+  --section-alt: 210 50% 97%;
 }
 
 .dark {
-  --background: 220 25% 8%;
-  --foreground: 40 20% 95%;
+  --background: 218 30% 12%;
+  --foreground: 210 25% 96%;
   --card: 220 25% 12%;
   --card-foreground: 40 20% 95%;
   --popover: 220 25% 12%;
   --popover-foreground: 40 20% 95%;
-  --primary: 24 85% 55%;
+  --primary: 209 78% 64%;
   --primary-foreground: 0 0% 100%;
-  --secondary: 220 15% 18%;
-  --secondary-foreground: 40 20% 95%;
-  --muted: 220 15% 18%;
-  --muted-foreground: 220 10% 60%;
-  --accent: 220 20% 22%;
-  --accent-foreground: 40 20% 95%;
+  --secondary: 216 26% 22%;
+  --secondary-foreground: 210 25% 96%;
+  --muted: 216 24% 22%;
+  --muted-foreground: 215 14% 66%;
+  --accent: 214 30% 28%;
+  --accent-foreground: 210 25% 96%;
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 0 0% 100%;
-  --border: 220 15% 22%;
-  --input: 220 15% 22%;
-  --ring: 24 85% 55%;
+  --border: 215 24% 30%;
+  --input: 215 24% 30%;
+  --ring: 210 82% 60%;
   --sidebar-background: 220 25% 12%;
   --sidebar-foreground: 40 20% 95%;
   --sidebar-primary: 0 0% 98%;
@@ -65,12 +65,12 @@
   --sidebar-accent: 220 20% 22%;
   --sidebar-accent-foreground: 40 20% 95%;
   --sidebar-border: 220 15% 22%;
-  --sidebar-ring: 24 85% 55%;
-  --hero-bg: 220 30% 6%;
-  --hero-foreground: 40 20% 97%;
-  --surface-warm: 30 10% 12%;
-  --surface-cool: 215 15% 12%;
-  --section-alt: 220 20% 10%;
+  --sidebar-ring: 210 82% 60%;
+  --hero-bg: 217 40% 10%;
+  --hero-foreground: 210 25% 98%;
+  --surface-warm: 217 17% 16%;
+  --surface-cool: 216 19% 16%;
+  --section-alt: 216 24% 14%;
 }
 * { box-sizing: border-box; border-color: hsl(var(--border)); }
 body {
@@ -145,14 +145,14 @@ body {
 
 .hero-gradient {
   background-image:
-    linear-gradient(135deg, rgba(10, 15, 22, 0.82), rgba(34, 42, 57, 0.72)),
-    url("./hero-bg.jpg");
+    linear-gradient(135deg, rgba(32, 83, 148, 0.66), rgba(74, 126, 192, 0.58)),
+    url("./Images/hero-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .gradient-text {
-  background-image: linear-gradient(135deg, #ed701d, #f5993d);
+  background-image: linear-gradient(135deg, #2f6fba, #6ca4e6);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
@@ -160,7 +160,7 @@ body {
 
 .site-header .logo .gradient-text {
   background-image: none;
-  color: #ed701d;
+  color: #2f6fba;
 }
 
 .site-header .logo span:last-child {
@@ -177,7 +177,7 @@ body {
 
 .bg-accent .logo .gradient-text {
   background-image: none;
-  color: #ed701d;
+  color: #9bc3ef;
 }
 
 .bg-accent .logo span:last-child {
@@ -194,7 +194,7 @@ body {
 
 .site-footer-main .logo .gradient-text {
   background-image: none;
-  color: #ed701d;
+  color: #9bc3ef;
 }
 
 .site-footer-main .logo span:last-child {
