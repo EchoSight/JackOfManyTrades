@@ -697,6 +697,18 @@ code, pre, .mono {
   font-weight: 700;
 }
 
+
+.service-intro {
+  display: flex;
+  align-items: flex-start;
+  gap: .85rem;
+}
+
+.service-intro .service-title,
+.service-intro .muted {
+  margin: 0;
+}
+
 .service-rate-banner {
   max-width: 760px;
   margin: 0 auto;
