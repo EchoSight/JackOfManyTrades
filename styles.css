@@ -297,6 +297,15 @@ h2 { margin: 0 0 .8rem; font-size: clamp(1.6rem, 3vw, 2.4rem); }
 .card h3 { margin-top: 0; margin-bottom: .4rem; }
 .card p { margin: 0; color: hsl(var(--muted-foreground)); }
 
+.case-study-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: calc(var(--radius) + 2px);
+  margin-bottom: .9rem;
+  border: 1px solid hsl(var(--border));
+}
+
 
 .approach-card {
   padding-top: 1.5rem;
